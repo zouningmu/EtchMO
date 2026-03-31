@@ -1,0 +1,11 @@
+opencv-python
+torch>=1.8.0
+torchvision
+scipy>=1.9.0
+plyfile
+pandas
+matplotlib
+networkx
+optuna
+numpy
+gdstk
