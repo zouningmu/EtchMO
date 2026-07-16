@@ -20,7 +20,7 @@ import argparse
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 REALTYPE = torch.float32
 
-ITERATIONS = 20
+ITERATIONS = 10
 STEP_SIZE = 0.8
 
 def gradImage(image):
@@ -59,7 +59,7 @@ class LevelSet(nn.Module):
         self._binarize = Binarize()
 
         self.etch = etch_sim.DiffVEBEtch2D(
-            es_D1=20.0, es_D2=50.0, es_D3=50.0, es_D4=100.0,
+            es_D1=20.0, es_D2=25.0, es_D3=30.0, es_D4=100.0,
             ext_sigma=5.0,
             max_bias_nm=20.0,
             phi_tau=5.0,

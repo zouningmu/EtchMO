@@ -36,7 +36,7 @@ def run_etch_only(
     mask = torch.from_numpy(arr).to(dev)
 
     etch = DiffVEBEtch2D(
-        es_D1=20.0, es_D2=50.0, es_D3=50.0, es_D4=100.0,
+        es_D1=20.0, es_D2=25.0, es_D3=30.0, es_D4=100.0,
         ext_sigma=5.0,
         max_bias_nm=20.0,
         phi_tau=2.0,
